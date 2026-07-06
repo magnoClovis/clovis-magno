@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clóvis Magno (ES)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=20260703d">
+</head>
+<body>
+  <!-- Navegacion lateral: enlaces fijos a las secciones del curriculum. -->
+  <aside class="sidebar" aria-label="Navegacion del curriculum">
+    <a class="brand" href="#inicio" aria-label="Inicio">C/M</a>
+
+    <nav class="menu">
+      <a href="#sobre" class="active">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.8 12 3l9 7.8"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg>
+        <span>Sobre mí</span>
+      </a>
+      <a href="#projetos">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 9-4 3 4 3"/><path d="m16 9 4 3-4 3"/><path d="m14 5-4 14"/></svg>
+        <span>Proyectos</span>
+      </a>
+      <a href="#experiencia">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 6h4"/><path d="M10 6V5a2 2 0 0 1 2-2 2 2 0 0 1 2 2v1"/><rect x="3" y="6" width="18" height="14" rx="2"/><path d="M3 12h18"/></svg>
+        <span>Experiencia</span>
+      </a>
+      <a href="#habilidades">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18"/><path d="M8 7a4 4 0 1 1 4 4"/><path d="M16 17a4 4 0 1 1-4-4"/><path d="M16 7a4 4 0 0 0-4 4"/><path d="M8 17a4 4 0 0 0 4-4"/></svg>
+        <span>Competencias</span>
+      </a>
+      <a href="#educacao">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m22 10-10-5-10 5 10 5 10-5Z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/><path d="M22 10v6"/></svg>
+        <span>Educación</span>
+      </a>
+      <a href="#contato">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        <span>Contacto</span>
+      </a>
+    </nav>
+  </aside>
+  <!-- Fin de la navegacion lateral. -->
+
+  <!-- Selector de idioma: enlaces entre las versiones localizadas del curriculum. -->
+  <div class="language-switcher" aria-label="Selector de idioma">
+    <details>
+      <summary><span class="language-current"><span class="flag flag-es" aria-hidden="true"></span><span>Español</span></span></summary>
+      <div class="language-options">
+        <a href="index.html"><span class="flag flag-us" aria-hidden="true"></span><span>English</span></a>
+        <a href="es.html" aria-current="page"><span class="flag flag-es" aria-hidden="true"></span><span>Español</span></a>
+        <a href="pt.html"><span class="flag flag-br" aria-hidden="true"></span><span>Português</span></a>
+      </div>
+    </details>
+  </div>
+  <!-- Fin del selector de idioma. -->
+
+  <!-- Contenido principal: cuerpo imprimible del curriculum. -->
+  <main class="page">
+    <!-- Seccion de presentacion: identidad, titular, foto y canales de contacto. -->
+    <section class="hero section" id="inicio">
+      <div class="hero-content">
+        <h1>Clóvis Magno Gonçalves de Freitas Santos</h1>
+        <h2>Estudiante de Ingeniería Informática • Profesor de Programación • Proyectos de IA y Software</h2>
+        <p class="headline">Desarrollo de Software <span>|</span> Inteligencia Artificial <span>|</span> Algoritmos de Búsqueda y Optimización <span>|</span> Sistemas Embebidos <span>|</span> Tecnología Educativa</p>
+        <p class="intro">
+          Estudiante de Ingeniería Informática con experiencia en desarrollo de software,
+          enseñanza de programación y creación de tecnología para educación. Apasionado por
+          los algoritmos de búsqueda y optimización, la inteligencia artificial, los sistemas embebidos y
+          el desarrollo de soluciones que hagan el aprendizaje más eficiente y accesible.
+        </p>
+
+      </div>
+
+      <div class="portrait-wrap" aria-label="Foto de perfil">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="orbit orbit-three"></div>
+        <div class="dot dot-a"></div>
+        <div class="dot dot-b"></div>
+        <div class="dot dot-c"></div>
+        <div class="portrait" role="img" aria-label="Foto de Clovis Magno"></div>
+      </div>
+
+      <ul class="contact-grid" id="contato" aria-label="Datos de contacto">
+        <li>
+          <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Sevilla, España</span>
+        </li>
+        <li>
+          <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          <a href="mailto:cmagno.contact@gmail.com">cmagno.contact@gmail.com</a>
+        </li>
+        <li>
+          <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.77.62 2.61a2 2 0 0 1-.45 2.11L8 9.72a16 16 0 0 0 6.28 6.28l1.28-1.28a2 2 0 0 1 2.11-.45c.84.29 1.71.5 2.61.62A2 2 0 0 1 22 16.92Z"/></svg>
+          <a href="tel:+34651489209">+34 651 48 92 09</a>
+        </li>
+        <li>
+          <svg class="contact-icon brand-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.2-.4 6.5-1.6 6.5-7A5.4 5.4 0 0 0 19 3.8 5 5 0 0 0 18.9.3S17.7-.1 15 1.8a13.4 13.4 0 0 0-7 0C5.3-.1 4.1.3 4.1.3A5 5 0 0 0 4 3.8 5.4 5.4 0 0 0 2.5 7.5c0 5.4 3.3 6.6 6.5 7A4.8 4.8 0 0 0 8 18v4"/><path d="M8 19c-3 .9-4.5-.8-6-2"/></svg>
+          <a href="https://github.com/magnoClovis" target="_blank" rel="noopener">github.com/magnoClovis</a>
+        </li>
+        <li>
+          <svg class="contact-icon brand-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6Z"/><path d="M2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          <a href="https://www.linkedin.com/in/clovismagno/" target="_blank" rel="noopener">linkedin.com/in/clovismagno</a>
+        </li>
+        <li>
+          <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 0 20"/><path d="M12 2a15.3 15.3 0 0 0 0 20"/></svg>
+          <a href="https://magnoclovis.github.io/clovis-magno/" target="_blank" rel="noopener">magnoclovis.github.io/clovis-magno</a>
+        </li>
+      </ul>
+    </section>
+    <!-- Fin de la seccion de presentacion. -->
+
+    <!-- Seccion sobre mi: resumen profesional enfocado en software. -->
+    <section class="section about" id="sobre">
+      <div class="section-title">
+        <h2>Sobre mí</h2>
+      </div>
+      <div class="card about-layout">
+        <div class="section-visual visual-teal">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21a8 8 0 0 0-16 0"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <div class="about-copy">
+          <p>
+            Estudiante de Ingeniería Informática con foco en desarrollo de software, inteligencia
+            artificial y algoritmos de búsqueda y optimización. Desarrollo aplicaciones completas,
+            desde la persistencia de datos y la integración con APIs hasta funcionalidades basadas en
+            LLMs y algoritmos genéticos, con especial interés en sistemas embebidos, aprendizaje
+            automático y tecnologías que hacen más eficientes los procesos cotidianos.
+          </p>
+          <p>
+            En paralelo a mi trabajo técnico, enseño programación y pensamiento computacional, lo que
+            ha mejorado mi forma de descomponer problemas y explicar sistemas complejos con claridad.
+            Estas habilidades también influyen directamente en cómo diseño y documento mis propios
+            proyectos de software.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Fin de la seccion sobre mi. -->
+
+    <!-- Seccion de proyectos: tarjetas de portfolio tecnico con etiquetas de tecnologia. -->
+    <section class="section" id="projetos">
+      <div class="section-heading">
+        <div class="section-title">
+          <h2>Proyectos</h2>
+        </div>
+      </div>
+
+      <div class="project-grid">
+        <article class="card project-card project-blue">
+          <div class="project-header">
+            <div class="section-visual">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5a3 3 0 0 0-5.6-1.5A3.5 3.5 0 0 0 4 9a3.5 3.5 0 0 0 0 6 3.5 3.5 0 0 0 2.4 5.5A3 3 0 0 0 12 19"/><path d="M12 5a3 3 0 0 1 5.6-1.5A3.5 3.5 0 0 1 20 9a3.5 3.5 0 0 1 0 6 3.5 3.5 0 0 1-2.4 5.5A3 3 0 0 1 12 19"/><path d="M12 5v14"/><path d="M8 9h1"/><path d="M15 9h1"/><path d="M8 15h1"/><path d="M15 15h1"/></svg>
+            </div>
+            <p class="project-kicker">IA aplicada</p>
+          </div>
+          <h3>Diario Nutricional Inteligente</h3>
+          <p>Plataforma web de seguimiento nutricional personalizado, con diario alimentario, objetivos dinámicos, métricas corporales y despensa inteligente. <strong>Arquitectura full-stack</strong> utilizando <strong>Python</strong>, con <strong>React</strong> en el frontend y persistencia mediante <strong>Firebase/Firestore</strong>, integrando <strong>estimaciones nutricionales asistidas por LLM</strong> y recomendaciones de comidas mediante <strong>algoritmo genético</strong>. Incluye copia de seguridad/importación de datos, informes y soporte multilingüe, con foco en usabilidad, seguridad de datos y seguimiento realista del progreso.</p>
+          <div class="tags">
+            <span>Python</span><span>JavaScript</span><span>React</span><span>Firebase</span><span>Firestore</span><span>LLMs</span><span>Algoritmos Genéticos</span><span>Nutrición Computacional</span><span>Visualización de Datos</span><span>PWA</span><span>Estadística</span>
+          </div>
+        </article>
+
+        <article class="card project-card project-green">
+          <div class="project-header">
+            <div class="section-visual">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15Z"/><path d="M8 6h8"/><path d="M8 10h8"/></svg>
+            </div>
+            <p class="project-kicker">Material didáctico</p>
+          </div>
+          <h3>Libros Didácticos de Programación</h3>
+          <p>Desarrollo completo de libros didácticos de <strong>Python</strong> y <strong>Arduino</strong>, incluyendo contenidos teóricos, ejercicios, proyectos prácticos, evaluaciones y <strong>secuencias didácticas</strong> para la enseñanza de programación.</p>
+          <div class="tags">
+            <span>Python</span><span>Arduino</span><span>Curriculum Design</span>
+          </div>
+        </article>
+
+        <article class="card project-card project-orange">
+          <div class="project-header">
+            <div class="section-visual">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 10h4v4h-4z"/><path d="M9 2v3"/><path d="M15 2v3"/><path d="M9 19v3"/><path d="M15 19v3"/><path d="M2 9h3"/><path d="M2 15h3"/><path d="M19 9h3"/><path d="M19 15h3"/></svg>
+            </div>
+            <p class="project-kicker">Robótica educativa</p>
+          </div>
+          <h3>Proyectos Educativos con Arduino</h3>
+          <p><strong>Sistemas embebidos</strong> aplicados a la robótica educativa, con proyectos prácticos que incluyen lectura de <strong>sensores</strong>, control de <strong>actuadores</strong>, comunicación serie e integración de pantallas, utilizados para enseñar programación y electrónica mediante experimentación práctica en el aula.</p>
+          <div class="tags">
+            <span>Arduino</span><span>Embedded Systems</span><span>Electronics</span>
+          </div>
+        </article>
+
+        <article class="card project-card project-purple">
+          <div class="project-header">
+            <div class="section-visual">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 9-4 3 4 3"/><path d="m16 9 4 3-4 3"/><path d="m14 5-4 14"/></svg>
+            </div>
+            <p class="project-kicker">Algoritmos de Búsqueda y Optimización</p>
+          </div>
+          <h3>Biblioteca de Algoritmos</h3>
+          <p>Biblioteca en <strong>Python</strong> con implementaciones de algoritmos clásicos de búsqueda y optimización, incluyendo <strong>Backtracking</strong>, <strong>Branch and Bound</strong>, <strong>Greedy</strong>, <strong>Divide and Conquer</strong>, <strong>Hill Climbing</strong> y <strong>Algoritmos Genéticos</strong>. Incluye comparación de complejidad y rendimiento entre estrategias exactas, heurísticas y metaheurísticas aplicadas a problemas de optimización combinatoria.</p>
+          <div class="tags">
+            <span>Search Algorithms</span><span>Optimization</span><span>Data Structures</span>
+          </div>
+        </article>
+
+        <article class="card project-card project-teal">
+          <div class="project-header">
+            <div class="section-visual">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6" height="6" rx="1.5"/><rect x="14" y="4" width="6" height="6" rx="1.5"/><rect x="9" y="14" width="6" height="6" rx="1.5"/><path d="M10 7h4"/><path d="M17 10v2a2 2 0 0 1-2 2h-3"/><path d="M7 10v2a2 2 0 0 0 2 2h3"/></svg>
+            </div>
+            <p class="project-kicker">Automatización</p>
+          </div>
+          <h3>Herramientas de Automatización</h3>
+          <p>Pipeline de automatización en <strong>Python</strong> para extraer y organizar datos de una plataforma web. Utiliza <strong>Selenium</strong> para autenticación, navegación programática entre secciones y descarga diaria de archivos CSV/XLSX, con organización automática por fecha en estructura de carpetas.</p>
+          <div class="tags">
+            <span>Selenium</span><span>Web Scraping</span><span>Data Processing</span>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- Fin de la seccion de proyectos. -->
+
+    <!-- Seccion de experiencia: historial profesional de docencia y tutoria. -->
+    <section class="section" id="experiencia">
+      <div class="section-heading">
+        <div class="section-title">
+          <h2>Experiencia</h2>
+        </div>
+      </div>
+
+      <div class="experience-grid">
+        <article class="card job-card">
+          <span class="job-dot"></span>
+          <h3>Profesor de Tecnología y Programación (IB MYP)</h3>
+          <p class="company">Colegio Internacional de Sevilla San Francisco de Paula</p>
+          <p class="meta">2024 - 2026 <span>•</span> Sevilla, España</p>
+          <ul>
+            <li>Impartí Programación, Robótica y Tecnología a alumnado de Educación Secundaria.</li>
+            <li>Desarrollé <strong>libros didácticos</strong>, <strong>Curriculum Design</strong>, <strong>Instructional Design</strong> y materiales pedagógicos.</li>
+            <li>Diseñé proyectos prácticos con <strong>Arduino</strong>, sensores, actuadores y <strong>Sistemas Embebidos</strong>.</li>
+            <li>Trabajé con metodologías <strong>IB MYP</strong>, <strong>Aprendizaje Basado en Proyectos (PBL)</strong> y evaluación por competencias.</li>
+            <li>Produje contenidos técnicos sobre programación, algoritmos, electrónica y sistemas embebidos.</li>
+          </ul>
+        </article>
+
+        <article class="card job-card">
+          <span class="job-dot"></span>
+          <h3>Profesor de Programación</h3>
+          <p class="company">How I Learned Code</p>
+          <p class="meta">Oct. 2022 - 2024 <span>•</span> Gines, España</p>
+          <ul>
+            <li>Organicé e impartí clases de programación en Python y Scratch para niños y adolescentes.</li>
+            <li>Planifiqué actividades prácticas orientadas al desarrollo del pensamiento computacional.</li>
+            <li>Desarrollé ejercicios, proyectos y retos adaptados a distintas edades.</li>
+            <li>Realicé seguimiento de la evolución del alumnado y adapté las actividades a sus necesidades.</li>
+          </ul>
+        </article>
+
+        <article class="card job-card">
+          <span class="job-dot"></span>
+          <h3>Profesor Particular</h3>
+          <p class="company">Autónomo</p>
+          <p class="meta">2016 - 2024</p>
+          <ul>
+            <li>Impartí clases particulares de programación, matemáticas, física, química, biología, inglés y español.</li>
+            <li>Desarrollé planes de estudio personalizados de acuerdo con objetivos individuales.</li>
+            <li>Preparé materiales de apoyo, listas de ejercicios y planes de estudio individualizados.</li>
+            <li>Apoyé a estudiantes de Educación Secundaria y preparación para asignaturas específicas.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    <!-- Fin de la seccion de experiencia. -->
+
+    <!-- Seccion de competencias: habilidades tecnicas y herramientas agrupadas. -->
+    <section class="section skills" id="habilidades">
+      <div class="section-title">
+        <h2>Competencias</h2>
+      </div>
+
+      <div class="card skills-grid">
+        <div class="skill-block skill-blue">
+          <h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 9-4 3 4 3"/><path d="m16 9 4 3-4 3"/><path d="m14 5-4 14"/></svg>Lenguajes</h3>
+          <div class="tags">
+            <span>Python</span><span>JavaScript</span><span>Java</span><span>C</span><span>C++</span><span>HTML/CSS</span><span>Arduino</span><span>ARM Assembly</span>
+          </div>
+        </div>
+
+        <div class="skill-block skill-purple">
+          <h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5a3 3 0 0 0-5.6-1.5A3.5 3.5 0 0 0 4 9a3.5 3.5 0 0 0 0 6 3.5 3.5 0 0 0 2.4 5.5A3 3 0 0 0 12 19"/><path d="M12 5a3 3 0 0 1 5.6-1.5A3.5 3.5 0 0 1 20 9a3.5 3.5 0 0 1 0 6 3.5 3.5 0 0 1-2.4 5.5A3 3 0 0 1 12 19"/><path d="M12 5v14"/></svg>Inteligencia Artificial</h3>
+          <div class="tags">
+            <span>Machine Learning</span><span>Deep Learning</span><span>Large Language Models (LLMs)</span><span>Procesamiento del Lenguaje Natural (NLP)</span><span>Prompt Engineering</span><span>Visión por Computador</span><span>Optimización Heurística</span>
+          </div>
+        </div>
+
+        <div class="skill-block skill-teal">
+          <h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5 5L3 18v3h3l6.7-6.7a4 4 0 0 0 5-5l-2.5 2.5-3-3 2.5-2.5Z"/></svg>Herramientas</h3>
+          <div class="tags">
+            <span>Git</span><span>GitHub</span><span>VS Code</span><span>PyCharm</span><span>Spyder</span><span>Arduino IDE</span><span>TensorFlow</span><span>PyTorch</span><span>NumPy</span><span>Pandas</span><span>Matplotlib</span><span>Selenium</span><span>Google Colab</span>
+          </div>
+        </div>
+
+        <div class="skill-block skill-green">
+          <h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 8 4-8 4-8-4 8-4Z"/><path d="m4 12 8 4 8-4"/><path d="m4 18 8 4 8-4"/></svg>Fundamentos de Informática</h3>
+          <div class="tags">
+            <span>Estructuras de Datos</span><span>Algoritmos de Búsqueda</span><span>Algoritmos de Optimización</span><span>Heurísticas y Metaheurísticas</span><span>Programación Orientada a Objetos</span><span>Análisis de Algoritmos</span><span>Sistemas Embebidos</span><span>Robótica Educativa</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fin de la seccion de competencias. -->
+
+    <!-- Seccion de educacion: linea de tiempo academica y tecnica en orden cronologico. -->
+    <section class="section education credentials" id="educacao">
+      <div class="section-title">
+        <h2>Educación</h2>
+      </div>
+
+      <div class="card timeline education-timeline">
+        <article class="timeline-item">
+          <div class="pin"></div>
+          <h3>2015 | 2017 - 2019</h3>
+          <strong>Formación técnica e inicio en Ingeniería Eléctrica</strong>
+          <p><strong class="institution">SENAI Minas Gerais</strong> - Aprendiz en Electroelectrónica (2015)</p>
+          <p><strong class="institution">Centro Universitário Newton Paiva</strong> - Ingeniería Eléctrica (2017 - 2018), Belo Horizonte, Brasil</p>
+          <p>Intercambio académico en <strong class="institution">Universitat de Lleida</strong> (2018 - 2019), Lleida, España</p>
+          <p class="coursework">Asignaturas: Mecatrónica, Electrónica Digital, Matemática Discreta, Alemán, English for Business y Catalán</p>
+          <p><span class="status-label">Estado:</span> <em class="status-value">cursada parcialmente en Brasil; intercambio integrado en el mismo itinerario de Ingeniería Eléctrica antes del traslado definitivo a España</em></p>
+        </article>
+
+        <article class="timeline-item">
+          <div class="pin"></div>
+          <h3>2019 - 2021</h3>
+          <strong>Ingeniería Eléctrica</strong>
+          <p><strong class="institution">Universidad de Sevilla</strong></p>
+          <p>Sevilla, España</p>
+          <p><span class="status-label">Estado:</span> <em class="status-value">cursada parcialmente - traslado a Ingeniería Informática</em></p>
+        </article>
+
+        <article class="timeline-item">
+          <div class="pin"></div>
+          <h3>2022 - Presente</h3>
+          <span class="timeline-badge">En curso</span>
+          <strong>Ingeniería Informática</strong>
+          <p><strong class="institution">Universidad Pablo de Olavide</strong></p>
+          <p>Sevilla, España</p>
+          <p><span class="status-label">Estado:</span> <em class="status-value">en curso</em></p>
+        </article>
+      </div>
+    </section>
+    <!-- Fin de la seccion de educacion. -->
+
+    <!-- Informacion adicional: idiomas, voluntariado y logros. -->
+    <section class="section extra-grid">
+      <article class="card extra-card language-card">
+        <h2><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 0 20"/><path d="M12 2a15.3 15.3 0 0 0 0 20"/></svg></span>Idiomas</h2>
+        <div class="language-list">
+          <div class="language-row" style="--level:100%"><p><strong>Portugués</strong><span>Nativo</span></p><div class="meter"><i></i></div></div>
+          <div class="language-row" style="--level:98%"><p><strong>Inglés</strong><span>Fluidez Profesional</span></p><div class="meter"><i></i></div></div>
+          <div class="language-row" style="--level:98%"><p><strong>Español</strong><span>Fluidez Profesional</span></p><div class="meter"><i></i></div></div>
+          <div class="language-row" style="--level:40%"><p><strong>Francés</strong><span>Básico</span></p><div class="meter"><i></i></div></div>
+          <div class="language-row" style="--level:30%"><p><strong>Alemán</strong><span>Básico</span></p><div class="meter"><i></i></div></div>
+          <div class="language-row" style="--level:30%"><p><strong>Japonés</strong><span>Básico</span></p><div class="meter"><i></i></div></div>
+          <div class="language-row" style="--level:30%"><p><strong>Catalán</strong><span>Básico</span></p><div class="meter"><i></i></div></div>
+        </div>
+      </article>
+
+      <article class="card extra-card volunteering-card">
+        <h2><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 19 4 12a4 4 0 0 1 6-5l2 2 2-2a4 4 0 0 1 6 5l-7 7a1.4 1.4 0 0 1-2 0Z"/></svg></span>Voluntariado</h2>
+        <div class="volunteer-list">
+          <p><strong>First Lego League (2023, 2024 y 2025)</strong><span>Organización del evento y acompañamiento de equipos durante la competición realizada en la Universidad Pablo de Olavide.</span></p>
+          <p><strong>MiniMix (2017)</strong><span>Asistente técnico en actividades Maker con Arduino, electrónica, impresión 3D, corte láser y fabricación digital.</span></p>
+          <p><strong>Arduino Day (2018)</strong><span>Participación en talleres y proyectos orientados al desarrollo de aplicaciones con Arduino y sistemas embebidos.</span></p>
+        </div>
+      </article>
+
+      <article class="card extra-card achievement-card">
+        <h2><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8"/><path d="M12 17v4"/><path d="M7 4h10v5a5 5 0 0 1-10 0V4Z"/><path d="M5 5H3v3a4 4 0 0 0 4 4"/><path d="M19 5h2v3a4 4 0 0 1-4 4"/></svg></span>Logros</h2>
+        <p><strong>Proyecto Destacado - UFMG Jovem (2015)</strong></p>
+        <p>Reconocimiento como proyecto destacado entre los proyectos de ingeniería por el proyecto científico "Lámparas LED: Funcionamiento y Cuestiones Ecológicas Involucradas", presentado en la 16.ª Feria UFMG Jovem.</p>
+      </article>
+    </section>
+    <!-- Fin de la informacion adicional. -->
+  </main>
+  <!-- Fin del contenido principal. -->
+</body>
+</html>

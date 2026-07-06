@@ -1,0 +1,11 @@
+/**
+ * Landscape print page size
+ *
+ * Sets the browser print target to A4 landscape for the optional landscape resume file.
+ */
+@media print {
+  @page {
+    size: A4 landscape;
+    margin: 0;
+  }
+}
