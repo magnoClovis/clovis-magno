@@ -556,6 +556,10 @@ h1 {
   min-height: 0;
 }
 
+.job-card:last-child {
+  grid-column: 1 / -1;
+}
+
 .job-dot {
   position: absolute;
   top: 30px;
@@ -581,6 +585,22 @@ h1 {
   margin-bottom: 10px;
   color: var(--title);
   font-weight: 700;
+}
+
+.company a {
+  color: var(--muted);
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.company a:hover {
+  color: var(--accent);
+}
+
+.company .sep {
+  color: #CBD5E1;
+  padding: 0 6px;
+  font-weight: 400;
 }
 
 .meta {
@@ -721,6 +741,39 @@ h1 {
   background: #F2F5F8;
   border: 1px solid #E9EEF4;
   border-radius: 7px;
+}
+
+/**
+ * Project links
+ *
+ * Discreet repository/live-site links shown in a project card footer.
+ */
+.project-links {
+  display: flex;
+  gap: 18px;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.project-links a:hover {
+  color: var(--project-color, var(--accent));
+}
+
+.project-links svg {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 auto;
 }
 
 /**
