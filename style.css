@@ -11,6 +11,8 @@
   --orange: #FF9F43;
   --purple: #8B6DFF;
   --cyan: #4FC3F7;
+  --pink: #FF6FA5;
+  --amber: #F5A623;
   --bg: #FAFAFA;
   --card: #FFFFFF;
   --title: #0F172A;
@@ -616,26 +618,15 @@ h1 {
  */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
 }
 
 .project-card {
-  grid-column: span 2;
   min-height: 330px;
   display: flex;
   flex-direction: column;
   padding: 28px;
-}
-
-.project-card:nth-child(1),
-.project-card:nth-child(2) {
-  grid-column: span 3;
-}
-
-.project-card:nth-child(4),
-.project-card:nth-child(5) {
-  min-height: 300px;
 }
 
 .project-header {
@@ -690,6 +681,21 @@ h1 {
 .project-teal {
   --project-color: var(--teal);
   --project-bg: rgba(76, 180, 191, 0.12);
+}
+
+.project-cyan {
+  --project-color: var(--cyan);
+  --project-bg: rgba(79, 195, 247, 0.12);
+}
+
+.project-pink {
+  --project-color: var(--pink);
+  --project-bg: rgba(255, 111, 165, 0.12);
+}
+
+.project-amber {
+  --project-color: var(--amber);
+  --project-bg: rgba(245, 166, 35, 0.13);
 }
 
 /**
@@ -1036,12 +1042,6 @@ h1 {
   .skills-grid,
   .extra-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .project-card,
-  .project-card:nth-child(1),
-  .project-card:nth-child(2) {
-    grid-column: auto;
   }
 
   .timeline {
