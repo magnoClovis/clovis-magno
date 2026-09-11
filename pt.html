@@ -455,14 +455,23 @@
   <!-- Fim do conteudo principal. -->
   <script>
     (function () {
-      const now = new Date();
-      const month = String(now.getMonth() + 1).padStart(2, "0");
-      const year = now.getFullYear();
-      const node = document.getElementById("last-updated");
-      if (node && node.dataset && node.dataset.label) {
-        node.textContent = `${node.dataset.label}: ${month}/${year}`;
+      const node = document.getElementById('last-updated');
+      if (!node || !node.dataset || !node.dataset.label) {
+        return;
       }
+      const localeByLabel = {
+        'Last updated': 'en-US',
+        'Última actualización': 'es-ES',
+        'Última atualização': 'pt-BR',
+      };
+      const monthYear = new Intl.DateTimeFormat(localeByLabel[node.dataset.label] || 'pt-BR', {
+        month: 'long',
+        year: 'numeric',
+      }).format(new Date());
+      const formatted = monthYear.charAt(0).toUpperCase() + monthYear.slice(1);
+      node.textContent = `${node.dataset.label}: ${formatted}`;
     })();
   </script>
 </body>
 </html>
+
