@@ -109,6 +109,7 @@
           <a href="https://magnoclovis.github.io/clovis-magno/" target="_blank" rel="noopener">magnoclovis.github.io/clovis-magno</a>
         </li>
       </ul>
+      <p class="last-updated" id="last-updated" data-label="Last updated"></p>
     </section>
     <!-- End hero section. -->
 
@@ -155,10 +156,10 @@
             </div>
             <p class="project-kicker">Applied AI</p>
           </div>
-          <h3>Intelligent Nutrition Diary</h3>
-          <p>Personalized nutrition-tracking web platform, with food diary, dynamic goals, body metrics, and smart pantry. <strong>React</strong> frontend, with persistence and authentication via <strong>Firebase/Firestore</strong>, integrating <strong>LLM-assisted estimates</strong> and <strong>genetic algorithm</strong> meal recommendations. Automated test coverage with <strong>Playwright</strong> and a <strong>CI/CD</strong> pipeline via GitHub Actions.</p>
+          <h3>Trofia (Nutrition Tracker)</h3>
+          <p>Personal nutrition app available on web and Android, combining food and water tracking, weekly analytics, body-composition history, and a smart pantry. Built with <strong>React/Firebase/Firestore</strong>, with an <strong>offline-first</strong> architecture and persistent caching. Integrates <strong>Gemini</strong>-powered photo meal recognition and text-based dish analysis, protected by a dedicated <strong>Cloudflare Workers</strong> proxy with token validation and rate limiting, plus enforced <strong>Firebase App Check</strong>. Includes a <strong>genetic algorithm</strong> for personalized meal recommendations and a contextual <strong>0-5</strong> scoring engine. Covered by 100+ automated tests (<strong>Playwright</strong>) and a <strong>CI/CD</strong> pipeline via GitHub Actions.</p>
           <div class="tags">
-            <span>React</span><span>Firebase</span><span>Firestore</span><span>LLMs</span><span>Genetic Algorithms</span><span>Playwright</span><span>CI/CD</span><span>Computational Nutrition</span><span>PWA</span>
+            <span>React</span><span>Firebase</span><span>Firestore</span><span>Offline-first</span><span>Cloudflare Workers</span><span>Firebase App Check</span><span>Gemini</span><span>Genetic Algorithms</span><span>Playwright</span><span>CI/CD</span><span>Computational Nutrition</span>
           </div>
           <div class="project-links">
             <a href="https://github.com/magnoClovis/nutrition-tracker" target="_blank" rel="noopener">
@@ -285,13 +286,15 @@
         <article class="card job-card">
           <span class="job-dot"></span>
           <h3>Independent Software Developer</h3>
-          <p class="company">Nutrition Tracker <span class="sep">·</span> <a href="https://github.com/magnoClovis/nutrition-tracker" target="_blank" rel="noopener">GitHub</a> <span class="sep">·</span> <a href="https://magnoclovis.github.io/nutrition-tracker/" target="_blank" rel="noopener">Live site</a></p>
+          <p class="company">Trofia (Nutrition Tracker) <span class="sep">·</span> <a href="https://github.com/magnoClovis/nutrition-tracker" target="_blank" rel="noopener">GitHub</a> <span class="sep">·</span> <a href="https://magnoclovis.github.io/nutrition-tracker/" target="_blank" rel="noopener">Live site</a></p>
           <p class="meta">2026 - Present</p>
           <ul>
-            <li>Solo development of a nutrition-tracking web application using <strong>React</strong> and <strong>Firebase/Firestore</strong>, currently in public beta (v0.8.0) with real users and version changelogs.</li>
-            <li>Integrated generative AI (<strong>LLM</strong>) features and <strong>genetic algorithms</strong> for personalized recommendations.</li>
-            <li>Implemented a suite of over 100 <strong>automated tests</strong> (unit + <strong>Playwright</strong>) and a <strong>CI/CD</strong> pipeline via GitHub Actions.</li>
-            <li>Built a responsive design system with light/dark themes and distinct mobile and desktop layouts, plus full internationalization (<strong>i18n</strong>) support across three languages (PT/EN/ES).</li>
+            <li>Designed, built, and shipped <strong>Trofia</strong> end-to-end: a cross-platform nutrition app live as a web app (<strong>React/Firebase</strong>) and as a native Android app distributed through Google Play's internal testing track, used daily by real beta testers.</li>
+            <li>Integrated <strong>Gemini</strong>-powered photo meal recognition and text-based dish analysis, secured behind a custom <strong>Cloudflare Workers</strong> proxy with Firebase token validation and rate limiting.</li>
+            <li>Implemented a <strong>genetic algorithm</strong> for personalized meal recommendations and a contextual <strong>0-5</strong> meal-scoring engine.</li>
+            <li>Built a suite of 100+ <strong>automated tests</strong> (<strong>unit</strong> + <strong>Playwright</strong>) wired into a <strong>GitHub Actions</strong> <strong>CI/CD</strong> pipeline.</li>
+            <li>Designed an <strong>offline-first</strong> data layer with <strong>Firebase Authentication</strong> and <strong>Cloud Firestore</strong>, keeping the app usable through unstable connectivity.</li>
+            <li>Delivered the full experience in <strong>Portuguese</strong>, <strong>English</strong>, and <strong>Spanish</strong>, with responsive light/dark themes and platform-specific layouts.</li>
           </ul>
         </article>
 
@@ -362,7 +365,7 @@
         <div class="skill-block skill-teal">
           <h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5 5L3 18v3h3l6.7-6.7a4 4 0 0 0 5-5l-2.5 2.5-3-3 2.5-2.5Z"/></svg>Tools</h3>
           <div class="tags">
-            <span>Git</span><span>GitHub</span><span>VS Code</span><span>PyCharm</span><span>Spyder</span><span>Arduino IDE</span><span>TensorFlow</span><span>PyTorch</span><span>NumPy</span><span>Pandas</span><span>Matplotlib</span><span>Selenium</span><span>Google Colab</span><span>Playwright</span><span>CI/CD</span><span>Seaborn</span><span>Plotly</span>
+            <span>Git</span><span>GitHub</span><span>VS Code</span><span>PyCharm</span><span>Spyder</span><span>Arduino IDE</span><span>TensorFlow</span><span>PyTorch</span><span>NumPy</span><span>Pandas</span><span>Matplotlib</span><span>Selenium</span><span>Google Colab</span><span>Playwright</span><span>CI/CD</span><span>Seaborn</span><span>Plotly</span><span>Codex (directed agentic use, with technical review and evidence-based validation)</span>
           </div>
         </div>
 
@@ -449,5 +452,16 @@
     <!-- End additional information. -->
   </main>
   <!-- End main content. -->
+  <script>
+    (function () {
+      const now = new Date();
+      const month = String(now.getMonth() + 1).padStart(2, "0");
+      const year = now.getFullYear();
+      const node = document.getElementById("last-updated");
+      if (node && node.dataset && node.dataset.label) {
+        node.textContent = `${node.dataset.label}: ${month}/${year}`;
+      }
+    })();
+  </script>
 </body>
 </html>

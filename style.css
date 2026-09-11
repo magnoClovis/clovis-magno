@@ -394,6 +394,14 @@ h1 {
   color: var(--accent);
 }
 
+.last-updated {
+  grid-column: 1 / -1;
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  opacity: 0.86;
+}
+
 .portrait-wrap {
   position: relative;
   width: min(390px, 100%);
@@ -1232,6 +1240,10 @@ h1 {
 
   .language-switcher,
   .print-mode-link {
+    display: none;
+  }
+
+  .last-updated {
     display: none;
   }
 
